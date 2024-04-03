@@ -34,3 +34,25 @@ const myFun=function(){
 }
 console.log(typeof heros)  // Object
 console.log(typeof myFun) //Function object
+
+// ************************************************************************
+// two type memory  Stack(primitive) , Heap(NOn-primitive)
+
+let name1 = "ayush";
+let anotherName = name1;  //make copy
+anotherName = "alpha"
+
+console.log(anotherName);
+console.log(name1);
+
+let userOne = {
+    email:"alpha@google.com",
+    upi: "alpha@ybl"
+
+}
+let userTwo = userOne;  //give refrence
+
+userTwo.email="ayush@google.com"
+console.log(userOne);
+console.log(userTwo)
+

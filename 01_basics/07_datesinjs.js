@@ -16,4 +16,17 @@ let myCreatedDate = new Date(2024,0,23);  // MONTH strted from 0 in js
 let myTimeStamp = Date.now();
 // console.log(myTimeStamp)
 // console.log(myCreatedDate.getTime());
-console.log(Math.floor(Date.now()/1000))
+// console.log(Math.floor(Date.now()/1000))
+
+
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getDay())
+console.log(newDate.getMonth()+1)
+// `${newDate.getDate()} and the time`    STRING INTERPOLATION:- Write In BackTicks
+// IMPORTANT
+console.log(newDate.toLocaleString('default',{
+    weekday:"long",
+    // timeZone:""
+    day:"2-digit"
+}))

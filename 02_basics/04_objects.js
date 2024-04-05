@@ -74,4 +74,30 @@ console.log(Object.entries(tinderuser))
 
 console.log(tinderuser.hasOwnProperty('isLoggedIn'))  // check whether object have this property
 
+// DESTRUCTURING IN ONJECTS line79-88
 
+const course = {
+    courseName:"js in hindi",
+    price:"999",
+    courseInstructor:"hithesh"
+}
+
+// course.courseInstructor
+const {courseInstructor: instructor} = course  //IN this step we extract the value from object i.e we directly access that value
+// console.log(courseInstructor)
+console.log(instructor);
+
+// API return the value from backend in the form of json file (older in xml file) (json --> javaScript object notation)
+// all the keys and value are  in String format
+// OBJECT FORMAT
+// {
+//     "name" = "ayush"
+//     "course" = "js in hindi"
+//     "price" = "free"
+// }
+// OR IN ARRAY FORMAT (object inside array)
+// [
+//     {},
+//     {},
+//     {}
+// ]

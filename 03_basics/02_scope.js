@@ -29,7 +29,7 @@ function one(){
 // two()
 one()
 
-// **************************************Interesting********************************
+// **************************************Interesting*******************************
 console.log(addOne(3))  // not give error
 function addOne(num){
     return num+1

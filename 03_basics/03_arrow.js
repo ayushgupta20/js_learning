@@ -34,7 +34,6 @@ const addTwo=(num1,num2)=>{
 }
 
 // console.log(addTwo(2,3))
-
 const addThree =(num1,num2,num3)=> (num1+num2+num3)   //this is called implicit return (only one line code)
 console.log(addThree(2,3,4))
 const retObj =()=>(   //when use paranthesis no need to write return 

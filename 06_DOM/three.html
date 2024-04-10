@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code with chai</title>
+    <style>
+        body{
+            background-color: #212121;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')   // crate new Node
+    console.log(div)
+    div.setAttribute('class','mydiv')
+    div.className = 'main'
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","generate a title")
+    div.style.backgroundColor='green'
+    div.style.padding='12px'
+    // div.innerText="chai or code"
+    const addText = document.createTextNode("chai or code")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+
+</html>

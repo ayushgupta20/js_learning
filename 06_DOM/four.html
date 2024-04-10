@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code with chai | DOM</title>
+    <style>
+        body{
+            background-color: black;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>javaScript</li>
+    </ul>
+</body>
+<script>
+    const addlang = (langName)=>{
+        const li = document.createElement('li');
+        
+        li.innerHTML=`${langName}`;  //Not optimize bcz when append oprtn perform it traverse full tree(bcz of innerHTML)
+        document.querySelector('.language').appendChild(li)   
+     
+
+    }    
+    const addlangOptimal =(langName)=>{
+        const li = document.createElement('li');
+        // const txtNode = document.createTextNode(langName);
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);  //optimize
+    }
+    addlang("python")
+    addlang("java")
+    addlang("typeScript")
+    addlangOptimal("golang")
+
+    //EDIT
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML="mojo"  // not optimize
+    const newLi = document.createElement('li')
+    newLi.textContent = 'mojo'
+    secondLang.replaceWith(newLi)
+
+    //EDIT
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML='<h1>Programming Languages</h1>'
+
+    //REMOVE
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove()
+
+</script>
+</html>

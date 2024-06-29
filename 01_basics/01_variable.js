@@ -14,6 +14,7 @@ accountCity="banglore";
 // console.log(accountEmail);
 // console.log(accountpass);
 // console.log(accountCity);
+// a
 
 console.table([accountEmail,accountId,accountpass,accountCity]);
 console.log(accountState);
